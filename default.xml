@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="bringmeup-github"
+           fetch="git://github.com/bringmeup/" />
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
   <remote  name="boundary-linode"
@@ -18,10 +20,11 @@
 
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="boundary-v2017.07" remote="boundary-github" />
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-n7.1.1_1.0.0-ga" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="nexwell-imx-n7.1.1_1.0.0-ga" remote="bringmeup-github" />
 
   <!-- Boundary Devices machine layer -->
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="device/nexwell" name="android_device_nexwell" remote="bringmeup-github" revision="nexwell-imx-n7.1.1_1.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
