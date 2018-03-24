@@ -6,6 +6,8 @@
            review="https://android-review.googlesource.com/" />
   <remote  name="bringmeup-github"
            fetch="git://github.com/bringmeup/" />
+  <remote  name="bringmeup"
+           fetch="ssh://git@github.com/bringmeup/" />
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
   <remote  name="boundary-linode"
@@ -19,12 +21,12 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="nexwell-v2017.07" remote="bringmeup-github" />
-  <project path="kernel_imx" name="linux-imx6" revision="nexwell-imx-n7.1.1_1.0.0-ga" remote="bringmeup-github" />
+  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="nexwell-v2017.07" remote="bringmeup" />
+  <project path="kernel_imx" name="linux-imx6" revision="nexwell-imx-n7.1.1_1.0.0-ga" remote="bringmeup" />
 
   <!-- Boundary Devices machine layer -->
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="device/nexwell" name="android_device_nexwell" remote="bringmeup-github" revision="nexwell-imx-n7.1.1_1.0.0-ga" />
+  <project path="device/nexwell" name="android_device_nexwell" remote="bringmeup" revision="nexwell-imx-n7.1.1_1.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
@@ -48,7 +50,7 @@
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" groups="pdk" />
   <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="bringmeup" revision="nexwell-imx-n7.1.1_1.0.0-ga" />
   <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
 
   <!-- projects added by Boundary -->
