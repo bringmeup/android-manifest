@@ -39,7 +39,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="hardware/imx" name="android_hardware_imx" remote="bringmeup" revision="nexwell-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/invensense" name="android_hardware_invensense" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
